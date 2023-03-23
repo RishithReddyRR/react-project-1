@@ -1,0 +1,164 @@
+@import 'colors';
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color:$second;
+    border-radius: 0 0 200px 200px;
+>main{
+    color: $first;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+h1{
+   font:300 5rem "Roboto";
+}
+p{
+    font:900 1rem "Roboto";
+}
+&::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat center/auto url("../images/1.png");
+    filter: blur(3px);
+    border-radius: 0 0 200px 200px;
+}
+}
+.home2{
+    width: 100%;
+    height: 100vh;
+    background-color: $second;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+
+
+>img{
+    width: 40%;
+    animation: lineUp .7s linear infinite alternate;
+}
+>div{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+p{
+    color: $first;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font: 100 1.2rem "Roboto";
+}
+}
+}
+@keyframes lineUp{
+    to{
+        transform: translateY(-10px);
+    }
+}
+.home3{
+    width: 100%;
+    height: 140vh;
+    background-color:$second;
+    margin-top: -100px;
+    display: flex;
+
+>div{
+    width: 70%;
+    height: 120vh;
+    background-color:$first;
+    border-radius: 0 200px 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ >h1{
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    padding: 0.5rem;
+    width: 15rem;
+    color:$dark
+ }
+ >p{
+    padding: 5rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font:italic 200 1.2rem $text2
+ }
+}
+}
+.home4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color:$second;
+    justify-content: flex-end;
+    >div{
+        background-color: $third;
+        width: 70%;
+        height: 70vh;
+        border-radius: 200px 0 0 200px;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        > h1 {
+            color: $first;
+            text-transform: uppercase;
+            width: 140px;
+            border-bottom: 2px solid $first;
+            padding: 0.5rem;
+          }
+        >article{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            margin-left: 4rem;
+            flex-wrap: wrap;
+            >div{
+                animation: imgUp 0.7s linear infinite alternate;
+                margin: 1rem;
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                background-color: $first;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: $dark;
+                cursor: pointer;
+                transition: all 0.5s;
+                &:hover{
+                    filter: invert(1);
+                }
+                svg {
+                    font-size: 4rem;
+                  }
+                  p {
+                    font: 900 1.2rem $text2;
+                  }
+            }
+            @keyframes imgUp{
+                to{
+                    transform: translateY(-20px);
+                }
+            }
+        }
+
+    }
+}
