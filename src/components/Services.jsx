@@ -14,7 +14,7 @@ function Services() {
             </div>
             <div>
                 <img src={img2} alt="" />
-                <p>peer-to-peer Support</p>
+                <p className='legend'>peer-to-peer Support</p>
             </div>
         </Carousel>
     </div>
